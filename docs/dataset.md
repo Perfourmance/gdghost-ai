@@ -31,7 +31,7 @@ python validate_data.py     # 서버 입력 규칙 검사. 데이터를 고칠 �
 | `experiences` | 0–6개 | 임베딩 + 규칙(분류별 경험) |
 | `status_note` | 0–60자, 없으면 `null` | 임베딩 |
 | `bio` | 0–120자, 없으면 `null` | 임베딩 |
-| `department` | 1–30자 | 규칙(같은 학과) |
+| `department` | `컴퓨터과학과` `데이터사이언스학과` `휴먼AI공학과` `경영학과` `전자공학과` `디자인학과` 중 하나 | 규칙(같은 학과) — 글자가 완전히 같아야 붙는다 |
 | `position` | `DEV` `AI` `DESIGN` `ETC` | 규칙(같은 포지션) |
 | `generation` | 1–99. 작을수록 먼저 들어온 기수 | 규칙(선배) |
 | `status` | `ENROLLED` 재학 · `LEAVE` 휴학 · `GRADUATED` 졸업 | 규칙(졸업이면 선배) |
@@ -66,7 +66,7 @@ python validate_data.py     # 서버 입력 규칙 검사. 데이터를 고칠 �
 ```json
 {"id": "Q01", "category": "JOB", "title": "백엔드 신입 포트폴리오에 어떤 프로젝트를 넣어야 하나요?",
  "body": null, "anonymous": false,
- "asker": {"department": "소프트웨어학과", "position": "DEV", "generation": 5}}
+ "asker": {"department": "컴퓨터과학과", "position": "DEV", "generation": 5}}
 ```
 
 | 필드 | 규칙 |
@@ -75,7 +75,7 @@ python validate_data.py     # 서버 입력 규칙 검사. 데이터를 고칠 �
 | `title` | 2–80자 |
 | `body` | 0–3000자, 없으면 `null` |
 | `anonymous` | 익명이면 질문자 규칙(학과 · 포지션 · 선배)을 쓰지 않는다 |
-| `asker` | 질문자 학과 · 포지션 · 기수. 규칙 점수용 |
+| `asker` | 질문자 학과 · 포지션 · 기수. 규칙 점수용. 학과는 부원과 같은 6개 중에서 |
 
 ### 목표 구성
 - 25개, 분류당 5개, 익명 5개 이상

@@ -15,6 +15,8 @@ from pathlib import Path
 DATA = Path(__file__).resolve().parent / "data"
 
 POSITIONS = {"DEV", "AI", "DESIGN", "ETC"}
+# 서버는 학과를 자유 입력으로 받지만, "같은 학과" 규칙은 글자가 완전히 같아야 붙으므로 평가셋은 이 목록만 쓴다
+DEPARTMENTS = {"컴퓨터과학과", "데이터사이언스학과", "휴먼AI공학과", "경영학과", "전자공학과", "디자인학과"}
 STATUSES = {"ENROLLED", "LEAVE", "GRADUATED"}
 MAX_INTERESTS = 4
 MAX_SKILLS_PER_INTEREST = 3
@@ -55,6 +57,11 @@ def check_unique(errors: list[str], where: str, values: list) -> None:
         errors.append(f"{where}: 중복 있음")
 
 
+def check_department(errors: list[str], where: str, department) -> None:
+    if department and department not in DEPARTMENTS:
+        errors.append(f"{where}: 학과 '{department}' (평가셋 학과 {sorted(DEPARTMENTS)} 중에서)")
+
+
 def check_member(m: dict, tags: dict, errors: list[str]) -> None:
     where = m.get("id", "?")
     interests = m.get("interests", [])
@@ -83,6 +90,7 @@ def check_member(m: dict, tags: dict, errors: list[str]) -> None:
     check_text(errors, f"{where} 근황", m.get("status_note"), STATUS_NOTE_MAX)
     check_text(errors, f"{where} 소개", m.get("bio"), BIO_MAX)
     check_text(errors, f"{where} 학과", m.get("department"), DEPARTMENT_MAX, required=True, minimum=1)
+    check_department(errors, where, m.get("department"))
     if m.get("position") not in POSITIONS:
         errors.append(f"{where}: 포지션 '{m.get('position')}' (허용 {sorted(POSITIONS)})")
     if m.get("status") not in STATUSES:
@@ -101,6 +109,7 @@ def check_question(q: dict, tags: dict, errors: list[str]) -> None:
         errors.append(f"{where}: anonymous는 true/false")
     asker = q.get("asker") or {}
     check_text(errors, f"{where} 질문자 학과", asker.get("department"), DEPARTMENT_MAX, required=True, minimum=1)
+    check_department(errors, f"{where} 질문자", asker.get("department"))
     if asker.get("position") not in POSITIONS:
         errors.append(f"{where}: 질문자 포지션 '{asker.get('position')}'")
     if not isinstance(asker.get("generation"), int) or not 1 <= asker["generation"] <= 99:
