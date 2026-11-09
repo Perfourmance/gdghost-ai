@@ -121,7 +121,8 @@ def check_labels(path: Path, member_ids: set, question_ids: set, errors: list[st
     if not path.exists():
         return 0
     seen = set()
-    with path.open(encoding="utf-8", newline="") as f:
+    # 엑셀에서 저장하면 앞에 BOM이 붙으므로 utf-8-sig로 읽는다
+    with path.open(encoding="utf-8-sig", newline="") as f:
         for row in csv.DictReader(f):
             qid = row["question_id"]
             if qid not in question_ids:
