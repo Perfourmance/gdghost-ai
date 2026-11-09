@@ -28,6 +28,19 @@ OK: @cf/baai/bge-m3, 3개, 1024차원
 
 > Git Bash에서 한글이 깨지면 `PYTHONIOENCODING=utf-8 python check_connection.py`
 
+## 임베딩
+
+```python
+from embed import Embedder
+
+embedder = Embedder.from_env()            # .env의 Workers AI 키
+vectors = embedder.embed(["글1", "글2"])   # 입력 순서대로 1024차원 벡터
+```
+
+- 서버와 같은 모델 · 옵션(`@cf/baai/bge-m3`, `truncate_inputs`)으로 부르고, 실패하면 1회 재시도합니다.
+- 받은 벡터는 `cache/embeddings/`에 글마다 저장해서 **같은 글은 다시 부르지 않습니다** (무료 한도 절약). `cache/`는 git에 올라가지 않습니다.
+- 명령줄: `python embed.py 글목록.txt` (한 줄에 한 글)
+
 ## 테스트
 
 ```bash
@@ -38,6 +51,8 @@ pytest
 |---|---|
 | `tests/test_text_builder.py` | 서버 `DefaultTextBuilderTest` 3개 이식 |
 | `tests/test_scorer.py` | 서버 `CandidateScorerTest` 8개 이식 + Java와 다를 수 있는 반올림 · 유사도 계산 |
+| `tests/test_embed.py` | 임베딩 호출 · 재시도 · 캐시 (가짜 응답, API 안 부름) |
+| `tests/test_embed_live.py` | 실제 API 호출. `LIVE_EMBEDDING=true`일 때만 |
 | `tests/test_config.py` | `config/matching.yaml` · 분류 이름이 서버와 같은지 (옆에 `../gdghost-server`가 있을 때) |
 
 점수 계산(`scorer.py`)과 글 조립(`text_builder.py`)은 서버 Java 코드를 그대로 옮긴 것입니다.
