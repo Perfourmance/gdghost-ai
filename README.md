@@ -28,6 +28,21 @@ OK: @cf/baai/bge-m3, 3개, 1024차원
 
 > Git Bash에서 한글이 깨지면 `PYTHONIOENCODING=utf-8 python check_connection.py`
 
+## 테스트
+
+```bash
+pytest
+```
+
+| 테스트 | 내용 |
+|---|---|
+| `tests/test_text_builder.py` | 서버 `DefaultTextBuilderTest` 3개 이식 |
+| `tests/test_scorer.py` | 서버 `CandidateScorerTest` 8개 이식 + Java와 다를 수 있는 반올림 · 유사도 계산 |
+| `tests/test_config.py` | `config/matching.yaml` · 분류 이름이 서버와 같은지 (옆에 `../gdghost-server`가 있을 때) |
+
+점수 계산(`scorer.py`)과 글 조립(`text_builder.py`)은 서버 Java 코드를 그대로 옮긴 것입니다.
+서버 코드가 바뀌면 같이 고치고, 서버 테스트의 기대값으로 맞는지 확인합니다.
+
 ## 작업 방법
 
 이슈 → 브랜치 → PR → 머지. gdghost-server의 [CONTRIBUTING](https://github.com/Perfourmance/gdghost-server/blob/main/CONTRIBUTING.md)과 같은 흐름입니다.
