@@ -1,0 +1,109 @@
+{
+  "interests": {
+    "백엔드": [
+      "Spring",
+      "Node.js",
+      "Django/FastAPI",
+      "Go",
+      "DB 설계",
+      "API 설계",
+      "배포·CI/CD",
+      "테스트"
+    ],
+    "프론트엔드": [
+      "React",
+      "Vue",
+      "Next.js",
+      "TypeScript",
+      "상태 관리",
+      "웹 성능",
+      "웹 접근성"
+    ],
+    "클라우드": [
+      "AWS",
+      "GCP",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "모니터링",
+      "네트워크"
+    ],
+    "iOS": [
+      "Swift",
+      "SwiftUI",
+      "UIKit",
+      "Flutter",
+      "앱 출시·심사"
+    ],
+    "안드로이드": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Flutter",
+      "앱 출시·심사"
+    ],
+    "데이터·AI": [
+      "데이터 분석",
+      "SQL",
+      "머신러닝",
+      "딥러닝",
+      "컴퓨터 비전",
+      "자연어 처리",
+      "LLM 활용",
+      "MLOps"
+    ],
+    "디자인": [
+      "Figma",
+      "UI 디자인",
+      "UX 리서치",
+      "디자인 시스템",
+      "브랜딩·그래픽",
+      "프로토타이핑"
+    ],
+    "기획": [
+      "서비스 기획",
+      "PM",
+      "데이터 기반 기획",
+      "사업 기획",
+      "요구사항 정리"
+    ],
+    "기타": [
+      "보안",
+      "게임 개발",
+      "임베디드·IoT",
+      "블록체인",
+      "QA",
+      "알고리즘·코딩테스트"
+    ]
+  },
+  "experiences": [
+    "인턴",
+    "정규직 취업",
+    "이직",
+    "창업",
+    "프리랜서·외주",
+    "대학원 진학",
+    "학부연구생",
+    "복수·부전공",
+    "교환학생",
+    "휴학",
+    "편입",
+    "군 복무",
+    "공모전 수상",
+    "해커톤",
+    "오픈소스 기여",
+    "자격증",
+    "동아리 운영진",
+    "대외활동"
+  ],
+  "categories": {
+    "JOB": "취업·채용",
+    "CAREER": "커리어·이직",
+    "PATH": "진로 고민",
+    "CAMPUS": "학교생활",
+    "STUDY": "기술·공부"
+  },
+  "source": {
+    "seed": "src/main/resources/db/migration/V3__seed_tags.sql",
+    "category": "src/main/java/com/gdghost/question/QuestionCategory.java"
+  }
+}
