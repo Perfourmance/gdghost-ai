@@ -1,0 +1,1734 @@
+{
+  "config": "2026-10-v1",
+  "members": 40,
+  "questions": 35,
+  "hit_strict": {
+    "hits": 28,
+    "total": 31,
+    "rate": 0.9032258064516129
+  },
+  "hit_lenient": {
+    "hits": 30,
+    "total": 33,
+    "rate": 0.9090909090909091
+  },
+  "hit_strict_no_cut": {
+    "hits": 28,
+    "total": 31,
+    "rate": 0.9032258064516129
+  },
+  "random_hit_strict": 0.27004375081624654,
+  "random_hit_lenient": 0.30132499079867503,
+  "hit_strict_named": {
+    "hits": 19,
+    "total": 22,
+    "rate": 0.8636363636363636
+  },
+  "hit_strict_anonymous": {
+    "hits": 9,
+    "total": 9,
+    "rate": 1.0
+  },
+  "hit_strict_written_before": {
+    "hits": 26,
+    "total": 28,
+    "rate": 0.9285714285714286
+  },
+  "hit_strict_written_after": {
+    "hits": 2,
+    "total": 3,
+    "rate": 0.6666666666666666
+  },
+  "sent_total": 105,
+  "sent_by_label": {
+    "2": 52,
+    "1": 5,
+    "0": 48
+  },
+  "precision_sent": 0.49523809523809526,
+  "irrelevant_sent_rate": 0.45714285714285713,
+  "cut_pass_by_label": {
+    "2": 0.991869918699187,
+    "1": 0.875,
+    "0": 0.7940941739824421
+  },
+  "pairs_by_label": {
+    "2": 123,
+    "1": 24,
+    "0": 1253
+  },
+  "profile_by_label": {
+    "2": {
+      "n": 123,
+      "min": 0.4311,
+      "p25": 0.5011,
+      "median": 0.5483,
+      "p75": 0.5828,
+      "max": 0.6884,
+      "mean": 0.5476390243902439
+    },
+    "1": {
+      "n": 24,
+      "min": 0.4174,
+      "p25": 0.481125,
+      "median": 0.51095,
+      "p75": 0.5451,
+      "max": 0.6562,
+      "mean": 0.5196458333333334
+    },
+    "0": {
+      "n": 1253,
+      "min": 0.303,
+      "p25": 0.4113,
+      "median": 0.4501,
+      "p75": 0.49235,
+      "max": 0.6753,
+      "mean": 0.4531094173982442
+    }
+  },
+  "empty_questions": [],
+  "no_match_sent": {
+    "Q31": 3,
+    "Q32": 3
+  },
+  "per_question": [
+    {
+      "id": "Q01",
+      "category": "CAMPUS",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M10",
+          "label": 1,
+          "relevance": 0.4986,
+          "rule": 0.8,
+          "profile": 0.5955,
+          "reasons": [
+            "경험: 복수·부전공",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M21",
+          "label": 1,
+          "relevance": 0.4878,
+          "rule": 0.8,
+          "profile": 0.5593,
+          "reasons": [
+            "경험: 복수·부전공",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M20",
+          "label": 0,
+          "relevance": 0.4821,
+          "rule": 0.8,
+          "profile": 0.5404,
+          "reasons": [
+            "경험: 휴학",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": null,
+      "correct": []
+    },
+    {
+      "id": "Q02",
+      "category": "CAMPUS",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M30",
+          "label": 0,
+          "relevance": 0.5645,
+          "rule": 1.0,
+          "profile": 0.5483,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M03",
+          "label": 0,
+          "relevance": 0.558,
+          "rule": 1.0,
+          "profile": 0.5267,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M29",
+          "label": 0,
+          "relevance": 0.5575,
+          "rule": 1.0,
+          "profile": 0.5251,
+          "reasons": [
+            "경험: 교환학생",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": null,
+      "correct": []
+    },
+    {
+      "id": "Q03",
+      "category": "CAMPUS",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M10",
+          "label": 2,
+          "relevance": 0.5362,
+          "rule": 0.9,
+          "profile": 0.5872,
+          "reasons": [
+            "경험: 복수·부전공",
+            "같은 학과"
+          ]
+        },
+        {
+          "member": "M35",
+          "label": 0,
+          "relevance": 0.4987,
+          "rule": 1.0,
+          "profile": 0.329,
+          "reasons": [
+            "경험: 동아리 운영진",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M21",
+          "label": 2,
+          "relevance": 0.4523,
+          "rule": 0.7,
+          "profile": 0.5745,
+          "reasons": [
+            "경험: 복수·부전공"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M10",
+        "M21"
+      ]
+    },
+    {
+      "id": "Q04",
+      "category": "CAMPUS",
+      "anonymous": true,
+      "sent": [
+        {
+          "member": "M10",
+          "label": 1,
+          "relevance": 0.3915,
+          "rule": 0.6,
+          "profile": 0.505,
+          "reasons": [
+            "경험: 복수·부전공"
+          ]
+        },
+        {
+          "member": "M38",
+          "label": 2,
+          "relevance": 0.391,
+          "rule": 0.6,
+          "profile": 0.5034,
+          "reasons": [
+            "경험: 휴학"
+          ]
+        },
+        {
+          "member": "M29",
+          "label": 0,
+          "relevance": 0.3802,
+          "rule": 0.6,
+          "profile": 0.4675,
+          "reasons": [
+            "경험: 교환학생"
+          ]
+        }
+      ],
+      "best_correct_rank": 2,
+      "correct": [
+        "M38"
+      ]
+    },
+    {
+      "id": "Q05",
+      "category": "CAMPUS",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M02",
+          "label": 0,
+          "relevance": 0.5248,
+          "rule": 1.0,
+          "profile": 0.4159,
+          "reasons": [
+            "경험: 동아리 운영진",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M13",
+          "label": 0,
+          "relevance": 0.5185,
+          "rule": 1.0,
+          "profile": 0.395,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M38",
+          "label": 2,
+          "relevance": 0.4867,
+          "rule": 0.8,
+          "profile": 0.5558,
+          "reasons": [
+            "경험: 휴학",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": 3,
+      "correct": [
+        "M01",
+        "M04",
+        "M11",
+        "M14",
+        "M20",
+        "M38"
+      ]
+    },
+    {
+      "id": "Q06",
+      "category": "PATH",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M40",
+          "label": 0,
+          "relevance": 0.5993,
+          "rule": 1.0,
+          "profile": 0.6644,
+          "reasons": [
+            "경험: 군 복무",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M27",
+          "label": 2,
+          "relevance": 0.5923,
+          "rule": 1.0,
+          "profile": 0.6411,
+          "reasons": [
+            "경험: 창업",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M08",
+          "label": 0,
+          "relevance": 0.5709,
+          "rule": 1.0,
+          "profile": 0.5698,
+          "reasons": [
+            "경험: 창업",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": 2,
+      "correct": [
+        "M15",
+        "M27"
+      ]
+    },
+    {
+      "id": "Q07",
+      "category": "PATH",
+      "anonymous": true,
+      "sent": [
+        {
+          "member": "M11",
+          "label": 0,
+          "relevance": 0.4068,
+          "rule": 0.6,
+          "profile": 0.5561,
+          "reasons": [
+            "경험: 군 복무"
+          ]
+        },
+        {
+          "member": "M22",
+          "label": 2,
+          "relevance": 0.4043,
+          "rule": 0.6,
+          "profile": 0.5477,
+          "reasons": [
+            "경험: 창업"
+          ]
+        },
+        {
+          "member": "M04",
+          "label": 0,
+          "relevance": 0.4027,
+          "rule": 0.6,
+          "profile": 0.5424,
+          "reasons": [
+            "경험: 교환학생"
+          ]
+        }
+      ],
+      "best_correct_rank": 2,
+      "correct": [
+        "M09",
+        "M14",
+        "M22",
+        "M23",
+        "M31",
+        "M35"
+      ]
+    },
+    {
+      "id": "Q08",
+      "category": "PATH",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M03",
+          "label": 2,
+          "relevance": 0.593,
+          "rule": 1.0,
+          "profile": 0.6432,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M29",
+          "label": 2,
+          "relevance": 0.5747,
+          "rule": 1.0,
+          "profile": 0.5822,
+          "reasons": [
+            "경험: 대학원 진학",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M30",
+          "label": 2,
+          "relevance": 0.5746,
+          "rule": 1.0,
+          "profile": 0.5819,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M03",
+        "M20",
+        "M29",
+        "M30"
+      ]
+    },
+    {
+      "id": "Q09",
+      "category": "PATH",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M21",
+          "label": 2,
+          "relevance": 0.4948,
+          "rule": 0.8,
+          "profile": 0.5828,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M30",
+          "label": 0,
+          "relevance": 0.4915,
+          "rule": 0.8,
+          "profile": 0.5716,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M03",
+          "label": 0,
+          "relevance": 0.4878,
+          "rule": 0.8,
+          "profile": 0.5594,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M10",
+        "M15",
+        "M21",
+        "M28",
+        "M34"
+      ]
+    },
+    {
+      "id": "Q10",
+      "category": "CAREER",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M25",
+          "label": 2,
+          "relevance": 0.5879,
+          "rule": 1.0,
+          "profile": 0.6262,
+          "reasons": [
+            "경험: 정규직 취업",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M35",
+          "label": 0,
+          "relevance": 0.5154,
+          "rule": 0.9,
+          "profile": 0.518,
+          "reasons": [
+            "경험: 정규직 취업",
+            "같은 학과"
+          ]
+        },
+        {
+          "member": "M17",
+          "label": 0,
+          "relevance": 0.5,
+          "rule": 0.8,
+          "profile": 0.6001,
+          "reasons": [
+            "경험: 정규직 취업",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M01",
+        "M24",
+        "M25",
+        "M26"
+      ]
+    },
+    {
+      "id": "Q11",
+      "category": "JOB",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M26",
+          "label": 2,
+          "relevance": 0.5715,
+          "rule": 1.0,
+          "profile": 0.5716,
+          "reasons": [
+            "경험: 인턴",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M01",
+          "label": 2,
+          "relevance": 0.5565,
+          "rule": 1.0,
+          "profile": 0.5216,
+          "reasons": [
+            "경험: 인턴",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M27",
+          "label": 0,
+          "relevance": 0.5414,
+          "rule": 1.0,
+          "profile": 0.4712,
+          "reasons": [
+            "경험: 해커톤",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M01",
+        "M16",
+        "M26"
+      ]
+    },
+    {
+      "id": "Q12",
+      "category": "JOB",
+      "anonymous": true,
+      "sent": [
+        {
+          "member": "M26",
+          "label": 2,
+          "relevance": 0.3965,
+          "rule": 0.6,
+          "profile": 0.5215,
+          "reasons": [
+            "경험: 인턴"
+          ]
+        },
+        {
+          "member": "M35",
+          "label": 0,
+          "relevance": 0.3921,
+          "rule": 0.6,
+          "profile": 0.507,
+          "reasons": [
+            "경험: 정규직 취업"
+          ]
+        },
+        {
+          "member": "M16",
+          "label": 0,
+          "relevance": 0.392,
+          "rule": 0.6,
+          "profile": 0.5068,
+          "reasons": [
+            "경험: 공모전 수상"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M01",
+        "M26"
+      ]
+    },
+    {
+      "id": "Q13",
+      "category": "JOB",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M07",
+          "label": 2,
+          "relevance": 0.5613,
+          "rule": 1.0,
+          "profile": 0.5375,
+          "reasons": [
+            "경험: 정규직 취업",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M11",
+          "label": 1,
+          "relevance": 0.5534,
+          "rule": 1.0,
+          "profile": 0.5113,
+          "reasons": [
+            "경험: 자격증",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M31",
+          "label": 0,
+          "relevance": 0.522,
+          "rule": 0.9,
+          "profile": 0.54,
+          "reasons": [
+            "경험: 인턴",
+            "같은 학과"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M01",
+        "M07",
+        "M25"
+      ]
+    },
+    {
+      "id": "Q14",
+      "category": "JOB",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M01",
+          "label": 2,
+          "relevance": 0.572,
+          "rule": 1.0,
+          "profile": 0.5735,
+          "reasons": [
+            "경험: 인턴",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M26",
+          "label": 2,
+          "relevance": 0.5651,
+          "rule": 1.0,
+          "profile": 0.5503,
+          "reasons": [
+            "경험: 인턴",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M40",
+          "label": 0,
+          "relevance": 0.5481,
+          "rule": 1.0,
+          "profile": 0.4937,
+          "reasons": [
+            "경험: 정규직 취업",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M01",
+        "M11",
+        "M16",
+        "M26",
+        "M38"
+      ]
+    },
+    {
+      "id": "Q15",
+      "category": "CAREER",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M40",
+          "label": 2,
+          "relevance": 0.5677,
+          "rule": 1.0,
+          "profile": 0.5591,
+          "reasons": [
+            "경험: 정규직 취업",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M26",
+          "label": 2,
+          "relevance": 0.5424,
+          "rule": 1.0,
+          "profile": 0.4748,
+          "reasons": [
+            "경험: 정규직 취업",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M01",
+          "label": 0,
+          "relevance": 0.5344,
+          "rule": 1.0,
+          "profile": 0.4481,
+          "reasons": [
+            "경험: 정규직 취업",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M07",
+        "M17",
+        "M26",
+        "M32",
+        "M40"
+      ]
+    },
+    {
+      "id": "Q16",
+      "category": "STUDY",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M37",
+          "label": 2,
+          "relevance": 0.5774,
+          "rule": 1.0,
+          "profile": 0.5913,
+          "reasons": [
+            "경험: 해커톤",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M02",
+          "label": 2,
+          "relevance": 0.4646,
+          "rule": 0.7,
+          "profile": 0.6154,
+          "reasons": [
+            "경험: 해커톤"
+          ]
+        },
+        {
+          "member": "M18",
+          "label": 2,
+          "relevance": 0.4625,
+          "rule": 0.8,
+          "profile": 0.4749,
+          "reasons": [
+            "경험: 공모전 수상",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M02",
+        "M12",
+        "M13",
+        "M16",
+        "M18",
+        "M26",
+        "M27",
+        "M36",
+        "M37"
+      ]
+    },
+    {
+      "id": "Q17",
+      "category": "STUDY",
+      "anonymous": true,
+      "sent": [
+        {
+          "member": "M36",
+          "label": 2,
+          "relevance": 0.4106,
+          "rule": 0.6,
+          "profile": 0.5685,
+          "reasons": [
+            "경험: 공모전 수상"
+          ]
+        },
+        {
+          "member": "M16",
+          "label": 2,
+          "relevance": 0.3943,
+          "rule": 0.6,
+          "profile": 0.5145,
+          "reasons": [
+            "경험: 공모전 수상"
+          ]
+        },
+        {
+          "member": "M18",
+          "label": 0,
+          "relevance": 0.3884,
+          "rule": 0.6,
+          "profile": 0.4948,
+          "reasons": [
+            "경험: 공모전 수상"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M01",
+        "M02",
+        "M16",
+        "M26",
+        "M36"
+      ]
+    },
+    {
+      "id": "Q18",
+      "category": "STUDY",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M36",
+          "label": 2,
+          "relevance": 0.544,
+          "rule": 1.0,
+          "profile": 0.4801,
+          "reasons": [
+            "경험: 공모전 수상",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M30",
+          "label": 0,
+          "relevance": 0.5306,
+          "rule": 1.0,
+          "profile": 0.4354,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M03",
+          "label": 0,
+          "relevance": 0.5205,
+          "rule": 1.0,
+          "profile": 0.4016,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M01",
+        "M02",
+        "M26",
+        "M36"
+      ]
+    },
+    {
+      "id": "Q19",
+      "category": "STUDY",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M26",
+          "label": 0,
+          "relevance": 0.442,
+          "rule": 0.7,
+          "profile": 0.5401,
+          "reasons": [
+            "경험: 해커톤"
+          ]
+        },
+        {
+          "member": "M02",
+          "label": 1,
+          "relevance": 0.4418,
+          "rule": 0.7,
+          "profile": 0.5394,
+          "reasons": [
+            "경험: 해커톤"
+          ]
+        },
+        {
+          "member": "M18",
+          "label": 0,
+          "relevance": 0.4329,
+          "rule": 0.7,
+          "profile": 0.5096,
+          "reasons": [
+            "경험: 공모전 수상"
+          ]
+        }
+      ],
+      "best_correct_rank": 6,
+      "correct": [
+        "M09",
+        "M27",
+        "M35"
+      ]
+    },
+    {
+      "id": "Q20",
+      "category": "STUDY",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M27",
+          "label": 2,
+          "relevance": 0.5812,
+          "rule": 1.0,
+          "profile": 0.6041,
+          "reasons": [
+            "경험: 해커톤",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M12",
+          "label": 0,
+          "relevance": 0.5643,
+          "rule": 1.0,
+          "profile": 0.5475,
+          "reasons": [
+            "경험: 오픈소스 기여",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M02",
+          "label": 0,
+          "relevance": 0.5557,
+          "rule": 1.0,
+          "profile": 0.519,
+          "reasons": [
+            "경험: 해커톤",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M08",
+        "M22",
+        "M27"
+      ]
+    },
+    {
+      "id": "Q21",
+      "category": "PATH",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M03",
+          "label": 2,
+          "relevance": 0.5784,
+          "rule": 1.0,
+          "profile": 0.5948,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M29",
+          "label": 2,
+          "relevance": 0.5675,
+          "rule": 1.0,
+          "profile": 0.5582,
+          "reasons": [
+            "경험: 대학원 진학",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M30",
+          "label": 2,
+          "relevance": 0.558,
+          "rule": 1.0,
+          "profile": 0.5266,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M03",
+        "M13",
+        "M20",
+        "M21",
+        "M29",
+        "M30"
+      ]
+    },
+    {
+      "id": "Q22",
+      "category": "CAMPUS",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M30",
+          "label": 2,
+          "relevance": 0.5032,
+          "rule": 0.8,
+          "profile": 0.6107,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M03",
+          "label": 2,
+          "relevance": 0.4891,
+          "rule": 0.8,
+          "profile": 0.5635,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M29",
+          "label": 0,
+          "relevance": 0.4682,
+          "rule": 0.8,
+          "profile": 0.4942,
+          "reasons": [
+            "경험: 교환학생",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M03",
+        "M13",
+        "M20",
+        "M21",
+        "M30"
+      ]
+    },
+    {
+      "id": "Q23",
+      "category": "PATH",
+      "anonymous": true,
+      "sent": [
+        {
+          "member": "M03",
+          "label": 2,
+          "relevance": 0.4093,
+          "rule": 0.6,
+          "profile": 0.5642,
+          "reasons": [
+            "경험: 학부연구생"
+          ]
+        },
+        {
+          "member": "M30",
+          "label": 2,
+          "relevance": 0.4057,
+          "rule": 0.6,
+          "profile": 0.5523,
+          "reasons": [
+            "경험: 학부연구생"
+          ]
+        },
+        {
+          "member": "M20",
+          "label": 2,
+          "relevance": 0.3998,
+          "rule": 0.6,
+          "profile": 0.5326,
+          "reasons": [
+            "경험: 휴학"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M03",
+        "M13",
+        "M20",
+        "M21",
+        "M29",
+        "M30"
+      ]
+    },
+    {
+      "id": "Q24",
+      "category": "PATH",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M30",
+          "label": 2,
+          "relevance": 0.5867,
+          "rule": 1.0,
+          "profile": 0.6224,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M03",
+          "label": 2,
+          "relevance": 0.5852,
+          "rule": 1.0,
+          "profile": 0.6173,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M29",
+          "label": 2,
+          "relevance": 0.5591,
+          "rule": 1.0,
+          "profile": 0.5304,
+          "reasons": [
+            "경험: 대학원 진학",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M03",
+        "M13",
+        "M20",
+        "M29",
+        "M30"
+      ]
+    },
+    {
+      "id": "Q25",
+      "category": "PATH",
+      "anonymous": true,
+      "sent": [
+        {
+          "member": "M29",
+          "label": 2,
+          "relevance": 0.4224,
+          "rule": 0.6,
+          "profile": 0.6082,
+          "reasons": [
+            "경험: 대학원 진학"
+          ]
+        },
+        {
+          "member": "M04",
+          "label": 0,
+          "relevance": 0.4059,
+          "rule": 0.6,
+          "profile": 0.5531,
+          "reasons": [
+            "경험: 교환학생"
+          ]
+        },
+        {
+          "member": "M14",
+          "label": 0,
+          "relevance": 0.4051,
+          "rule": 0.6,
+          "profile": 0.5502,
+          "reasons": [
+            "경험: 휴학"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M29"
+      ]
+    },
+    {
+      "id": "Q26",
+      "category": "JOB",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M26",
+          "label": 2,
+          "relevance": 0.5878,
+          "rule": 1.0,
+          "profile": 0.6261,
+          "reasons": [
+            "경험: 인턴",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M01",
+          "label": 2,
+          "relevance": 0.5859,
+          "rule": 1.0,
+          "profile": 0.6196,
+          "reasons": [
+            "경험: 인턴",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M40",
+          "label": 0,
+          "relevance": 0.5748,
+          "rule": 1.0,
+          "profile": 0.5826,
+          "reasons": [
+            "경험: 정규직 취업",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M01",
+        "M26",
+        "M27",
+        "M35"
+      ]
+    },
+    {
+      "id": "Q27",
+      "category": "JOB",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M24",
+          "label": 2,
+          "relevance": 0.5535,
+          "rule": 1.0,
+          "profile": 0.5115,
+          "reasons": [
+            "경험: 정규직 취업",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M01",
+          "label": 2,
+          "relevance": 0.4932,
+          "rule": 0.8,
+          "profile": 0.5774,
+          "reasons": [
+            "경험: 인턴",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M26",
+          "label": 2,
+          "relevance": 0.4923,
+          "rule": 0.8,
+          "profile": 0.5744,
+          "reasons": [
+            "경험: 인턴",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M01",
+        "M15",
+        "M24",
+        "M26"
+      ]
+    },
+    {
+      "id": "Q28",
+      "category": "CAMPUS",
+      "anonymous": true,
+      "sent": [
+        {
+          "member": "M14",
+          "label": 2,
+          "relevance": 0.4266,
+          "rule": 0.6,
+          "profile": 0.6219,
+          "reasons": [
+            "경험: 동아리 운영진"
+          ]
+        },
+        {
+          "member": "M04",
+          "label": 0,
+          "relevance": 0.4163,
+          "rule": 0.6,
+          "profile": 0.5876,
+          "reasons": [
+            "경험: 교환학생"
+          ]
+        },
+        {
+          "member": "M35",
+          "label": 2,
+          "relevance": 0.4149,
+          "rule": 0.6,
+          "profile": 0.5831,
+          "reasons": [
+            "경험: 동아리 운영진"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M09",
+        "M10",
+        "M14",
+        "M35",
+        "M38"
+      ]
+    },
+    {
+      "id": "Q29",
+      "category": "CAREER",
+      "anonymous": true,
+      "sent": [
+        {
+          "member": "M40",
+          "label": 2,
+          "relevance": 0.4014,
+          "rule": 0.6,
+          "profile": 0.5381,
+          "reasons": [
+            "경험: 정규직 취업"
+          ]
+        },
+        {
+          "member": "M32",
+          "label": 2,
+          "relevance": 0.3967,
+          "rule": 0.6,
+          "profile": 0.5223,
+          "reasons": [
+            "경험: 정규직 취업"
+          ]
+        },
+        {
+          "member": "M17",
+          "label": 2,
+          "relevance": 0.3896,
+          "rule": 0.6,
+          "profile": 0.4987,
+          "reasons": [
+            "경험: 정규직 취업"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M07",
+        "M17",
+        "M32",
+        "M40"
+      ]
+    },
+    {
+      "id": "Q30",
+      "category": "PATH",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M04",
+          "label": 0,
+          "relevance": 0.5429,
+          "rule": 1.0,
+          "profile": 0.4764,
+          "reasons": [
+            "경험: 교환학생",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M14",
+          "label": 0,
+          "relevance": 0.4989,
+          "rule": 0.9,
+          "profile": 0.4632,
+          "reasons": [
+            "경험: 휴학",
+            "같은 학과"
+          ]
+        },
+        {
+          "member": "M40",
+          "label": 0,
+          "relevance": 0.4352,
+          "rule": 0.7,
+          "profile": 0.5174,
+          "reasons": [
+            "경험: 군 복무"
+          ]
+        }
+      ],
+      "best_correct_rank": 19,
+      "correct": [
+        "M10",
+        "M23",
+        "M31"
+      ]
+    },
+    {
+      "id": "Q31",
+      "category": "STUDY",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M26",
+          "label": 0,
+          "relevance": 0.5701,
+          "rule": 1.0,
+          "profile": 0.5669,
+          "reasons": [
+            "경험: 해커톤",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M12",
+          "label": 0,
+          "relevance": 0.5612,
+          "rule": 1.0,
+          "profile": 0.5374,
+          "reasons": [
+            "경험: 오픈소스 기여",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M27",
+          "label": 0,
+          "relevance": 0.5606,
+          "rule": 1.0,
+          "profile": 0.5354,
+          "reasons": [
+            "경험: 해커톤",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": null,
+      "correct": []
+    },
+    {
+      "id": "Q32",
+      "category": "STUDY",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M26",
+          "label": 0,
+          "relevance": 0.4771,
+          "rule": 0.8,
+          "profile": 0.5238,
+          "reasons": [
+            "경험: 해커톤",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M39",
+          "label": 0,
+          "relevance": 0.4715,
+          "rule": 0.8,
+          "profile": 0.5051,
+          "reasons": [
+            "경험: 오픈소스 기여",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M13",
+          "label": 0,
+          "relevance": 0.4679,
+          "rule": 0.8,
+          "profile": 0.4931,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": null,
+      "correct": []
+    },
+    {
+      "id": "Q33",
+      "category": "STUDY",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M21",
+          "label": 0,
+          "relevance": 0.479,
+          "rule": 0.9,
+          "profile": 0.3968,
+          "reasons": [
+            "경험: 학부연구생",
+            "같은 학과"
+          ]
+        },
+        {
+          "member": "M27",
+          "label": 0,
+          "relevance": 0.47,
+          "rule": 0.8,
+          "profile": 0.5001,
+          "reasons": [
+            "경험: 해커톤",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M02",
+          "label": 0,
+          "relevance": 0.4667,
+          "rule": 0.8,
+          "profile": 0.489,
+          "reasons": [
+            "경험: 해커톤",
+            "같은 포지션"
+          ]
+        }
+      ],
+      "best_correct_rank": 18,
+      "correct": [
+        "M08"
+      ]
+    },
+    {
+      "id": "Q34",
+      "category": "JOB",
+      "anonymous": false,
+      "sent": [
+        {
+          "member": "M16",
+          "label": 2,
+          "relevance": 0.5923,
+          "rule": 1.0,
+          "profile": 0.641,
+          "reasons": [
+            "경험: 공모전 수상",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M17",
+          "label": 2,
+          "relevance": 0.5851,
+          "rule": 1.0,
+          "profile": 0.6171,
+          "reasons": [
+            "경험: 정규직 취업",
+            "같은 학과",
+            "같은 포지션"
+          ]
+        },
+        {
+          "member": "M18",
+          "label": 2,
+          "relevance": 0.5383,
+          "rule": 0.9,
+          "profile": 0.5945,
+          "reasons": [
+            "경험: 공모전 수상",
+            "같은 학과"
+          ]
+        }
+      ],
+      "best_correct_rank": 1,
+      "correct": [
+        "M16",
+        "M17",
+        "M18",
+        "M39"
+      ]
+    },
+    {
+      "id": "Q35",
+      "category": "STUDY",
+      "anonymous": true,
+      "sent": [
+        {
+          "member": "M27",
+          "label": 0,
+          "relevance": 0.4137,
+          "rule": 0.6,
+          "profile": 0.579,
+          "reasons": [
+            "경험: 해커톤"
+          ]
+        },
+        {
+          "member": "M39",
+          "label": 2,
+          "relevance": 0.4073,
+          "rule": 0.6,
+          "profile": 0.5575,
+          "reasons": [
+            "경험: 오픈소스 기여"
+          ]
+        },
+        {
+          "member": "M02",
+          "label": 0,
+          "relevance": 0.4021,
+          "rule": 0.6,
+          "profile": 0.5404,
+          "reasons": [
+            "경험: 해커톤"
+          ]
+        }
+      ],
+      "best_correct_rank": 2,
+      "correct": [
+        "M16",
+        "M17",
+        "M39"
+      ]
+    }
+  ]
+}
