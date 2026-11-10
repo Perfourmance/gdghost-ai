@@ -5,6 +5,7 @@ AI 매칭이 맞는 선배를 고르는지 재기 위한 가상 데이터. 실�
 | 파일 | 내용 |
 |---|---|
 | `data/members.jsonl` | 부원 프로필 (한 줄에 한 명) |
+| `labeling/members.json` | 위 파일을 들여쓰기한 보기용 사본. `python tools/make_label_sheet.py`로 만든다. 손으로 고치지 않는다 |
 | `data/questions.jsonl` | 질문 (한 줄에 하나) |
 | `data/labels.csv` | 정답표 — 라벨링 기준(`docs/labeling-guide.md`, 팀 합의 후 추가)에 따라 작성 |
 | `data/tags.json` | 서버 태그 목록 · 질문 분류. `python tools/sync_tags.py ../gdghost-server`로 만든다. 손으로 고치지 않는다 |

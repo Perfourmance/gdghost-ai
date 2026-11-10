@@ -1,6 +1,7 @@
 """라벨 작업지를 만든다.
 
 - labeling/members.md       부원 전체 한눈에 보기 (매칭에 쓰이는 정보만)
+- labeling/members.json     members.jsonl을 들여쓰기한 보기용 사본. 고칠 때는 원본 jsonl을 고친다
 - labeling/labels-template.csv  질문 25개 + 빈 정답 칸. 엑셀에서 열어 채운다
 
 질문의 note(작성자 표시)는 라벨 판단이 끌려가지 않게 작업지에 넣지 않는다.
@@ -47,7 +48,9 @@ def main() -> None:
     members = read_jsonl(DATA / "members.jsonl")
     questions = read_jsonl(DATA / "questions.jsonl")
     OUT.mkdir(exist_ok=True)
-    (OUT / "members.md").write_text(members_sheet(members), encoding="utf-8")
+    (OUT / "members.md").write_text(members_sheet(members), encoding="utf-8", newline="\n")
+    (OUT / "members.json").write_text(json.dumps(members, ensure_ascii=False, indent=2) + "\n",
+                                      encoding="utf-8", newline="\n")
     # 엑셀이 한글을 깨뜨리지 않게 BOM을 붙인다 (utf-8-sig)
     with (OUT / "labels-template.csv").open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.writer(f)
@@ -55,7 +58,7 @@ def main() -> None:
         for q in questions:
             text = q["title"] + (f" / {q['body']}" if q["body"] else "")
             writer.writerow([q["id"], "", "", "", tags["categories"][q["category"]], text])
-    print(f"부원 {len(members)}명 → labeling/members.md, 질문 {len(questions)}개 → labeling/labels-template.csv")
+    print(f"부원 {len(members)}명 → labeling/members.md · members.json, 질문 {len(questions)}개 → labeling/labels-template.csv")
 
 
 if __name__ == "__main__":
