@@ -1,6 +1,6 @@
 """라벨 작업지를 만든다.
 
-- labeling/members.md       부원 15명 한눈에 보기 (매칭에 쓰이는 정보만)
+- labeling/members.md       부원 전체 한눈에 보기 (매칭에 쓰이는 정보만)
 - labeling/labels-template.csv  질문 25개 + 빈 정답 칸. 엑셀에서 열어 채운다
 
 질문의 note(작성자 표시)는 라벨 판단이 끌려가지 않게 작업지에 넣지 않는다.

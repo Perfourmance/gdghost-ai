@@ -16,7 +16,8 @@ DATA = Path(__file__).resolve().parent / "data"
 
 POSITIONS = {"DEV", "AI", "DESIGN", "ETC"}
 # 서버는 학과를 자유 입력으로 받지만, "같은 학과" 규칙은 글자가 완전히 같아야 붙으므로 평가셋은 이 목록만 쓴다
-DEPARTMENTS = {"컴퓨터과학과", "데이터사이언스학과", "휴먼AI공학과", "경영학과", "전자공학과", "디자인학과"}
+DEPARTMENTS = {"컴퓨터과학과", "데이터사이언스학과", "휴먼AI공학과", "경영학과", "전자공학과", "디자인학과",
+               "공간환경학부", "게임전공"}
 STATUSES = {"ENROLLED", "LEAVE", "GRADUATED"}
 MAX_INTERESTS = 4
 MAX_SKILLS_PER_INTEREST = 3
