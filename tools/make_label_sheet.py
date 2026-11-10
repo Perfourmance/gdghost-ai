@@ -2,7 +2,7 @@
 
 - labeling/members.md       부원 전체 한눈에 보기 (매칭에 쓰이는 정보만)
 - labeling/members.json     members.jsonl을 들여쓰기한 보기용 사본. 고칠 때는 원본 jsonl을 고친다
-- labeling/labels-template.csv  질문 25개 + 빈 정답 칸. 엑셀에서 열어 채운다
+- labeling/labels-template.csv  질문 전체 + 빈 정답 칸. 엑셀에서 열어 채운다
 
 질문의 note(작성자 표시)는 라벨 판단이 끌려가지 않게 작업지에 넣지 않는다.
 
