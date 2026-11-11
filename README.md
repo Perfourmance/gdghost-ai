@@ -41,6 +41,17 @@ vectors = embedder.embed(["글1", "글2"])   # 입력 순서대로 1024차원 �
 - 받은 벡터는 `cache/embeddings/`에 글마다 저장해서 **같은 글은 다시 부르지 않습니다** (무료 한도 절약). `cache/`는 git에 올라가지 않습니다.
 - 명령줄: `python embed.py 글목록.txt` (한 줄에 한 글)
 
+## 평가
+
+```bash
+python evaluate.py                                     # 기준선 → results/baseline-detail.md · baseline.json
+python evaluate.py --config config/실험.yaml --name 실험  # 다른 설정으로
+```
+
+- 평가셋(`data/`)을 서버와 같은 글로 조립해 임베딩하고, 서버와 같은 공식으로 질문마다 3명을 뽑아 정답표와 비교합니다.
+- 결과 요약은 [results/baseline.md](results/baseline.md).
+- `--export-java 경로`: 같은 벡터를 서버 `CandidateScorer`로 다시 계산해 대조할 입력 파일을 만듭니다 (점수는 `.scores`).
+
 ## 테스트
 
 ```bash
