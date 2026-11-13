@@ -52,6 +52,13 @@ python evaluate.py --config config/실험.yaml --name 실험  # 다른 설정으
 - 결과 요약은 [results/baseline.md](results/baseline.md).
 - `--export-java 경로`: 같은 벡터를 서버 `CandidateScorer`로 다시 계산해 대조할 입력 파일을 만듭니다 (점수는 `.scores`).
 
+```bash
+python exp_weights.py      # 가중치 · 컷 조합 비교 → results/exp-weights-sweep.md
+```
+
+- 짝마다 유사도와 규칙 항목을 한 번만 계산해 두고 가중치만 바꿔 다시 더하므로, 조합 수천 개를 몇 초 안에 돌립니다. 같은 설정이면 `evaluate.py`와 결과가 같습니다.
+- 결론은 [results/exp-weights.md](results/exp-weights.md), 추천 설정은 [config/exp-weights.yaml](config/exp-weights.yaml).
+
 ## 테스트
 
 ```bash
@@ -64,6 +71,8 @@ pytest
 | `tests/test_scorer.py` | 서버 `CandidateScorerTest` 8개 이식 + Java와 다를 수 있는 반올림 · 유사도 계산 |
 | `tests/test_embed.py` | 임베딩 호출 · 재시도 · 캐시 (가짜 응답, API 안 부름) |
 | `tests/test_embed_live.py` | 실제 API 호출. `LIVE_EMBEDDING=true`일 때만 |
+| `tests/test_evaluate.py` | 태그 순서 · 라벨 읽기 · Hit@3 · 무작위 기준선 |
+| `tests/test_exp_weights.py` | 빠른 계산이 `evaluate.py`와 같은지 (임베딩 캐시가 있을 때) |
 | `tests/test_config.py` | `config/matching.yaml` · 분류 이름이 서버와 같은지 (옆에 `../gdghost-server`가 있을 때) |
 
 점수 계산(`scorer.py`)과 글 조립(`text_builder.py`)은 서버 Java 코드를 그대로 옮긴 것입니다.

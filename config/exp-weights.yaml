@@ -1,0 +1,18 @@
+# #8 추천안. config/matching.yaml(2026-10-v1)에서 바꾼 값만 주석으로 표시. 근거는 results/exp-weights.md
+matching:
+  version: 2026-11-v2
+  weights: { rule: 0.1, profile: 0.6, history: 0.3 }   # 0.4 / 0.3 / 0.3 → 순위를 임베딩 유사도가 정한다
+  rule: { experience: 0.6, interest: 1.0, department: 0.2, position: 0.1, senior: 0.1 }   # interest 0.3 → 1.0 (선배 찾기에서만 쓰임)
+  history: { adopted-bonus: 0.1, reason-min: 0.6 }
+  activity: { answer-count-cap: 10, per-answer: 0.01, recent-days: 30, recent-bonus: 0.05, pass-penalty: 0.05 }
+  min-score: 0.04               # 0.15 → 0.04. 질문 벡터가 없을 때(규칙만) 지금과 같은 사람이 통과하는 값
+  max-candidates: 3
+  max-per-question: 5
+  direct-timeout-hours: 24
+  use-questioner-rules-on-anonymous: false
+  category-experience:
+    JOB: [인턴, 정규직 취업, 공모전 수상, 해커톤, 자격증]
+    CAREER: [정규직 취업, 이직, 창업, 프리랜서·외주]
+    PATH: [대학원 진학, 학부연구생, 휴학, 군 복무, 교환학생, 창업]
+    CAMPUS: [복수·부전공, 교환학생, 편입, 휴학, 동아리 운영진, 학부연구생]
+    STUDY: [오픈소스 기여, 해커톤, 공모전 수상, 학부연구생]
