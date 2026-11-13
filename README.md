@@ -59,6 +59,13 @@ python exp_weights.py      # 가중치 · 컷 조합 비교 → results/exp-weig
 - 짝마다 유사도와 규칙 항목을 한 번만 계산해 두고 가중치만 바꿔 다시 더하므로, 조합 수천 개를 몇 초 안에 돌립니다. 같은 설정이면 `evaluate.py`와 결과가 같습니다.
 - 결론은 [results/exp-weights.md](results/exp-weights.md), 추천 설정은 [config/exp-weights.yaml](config/exp-weights.yaml).
 
+```bash
+python exp_text.py         # 텍스트 조립 방식 비교 → results/exp-text-sweep.md
+```
+
+- 질문 · 프로필 글을 다른 모양으로 조립해 임베딩하고 같은 지표로 비교합니다. 새 글만 API를 부릅니다.
+- 결론은 [results/exp-text.md](results/exp-text.md) (지금 방식 유지).
+
 ## 테스트
 
 ```bash
@@ -73,6 +80,7 @@ pytest
 | `tests/test_embed_live.py` | 실제 API 호출. `LIVE_EMBEDDING=true`일 때만 |
 | `tests/test_evaluate.py` | 태그 순서 · 라벨 읽기 · Hit@3 · 무작위 기준선 |
 | `tests/test_exp_weights.py` | 빠른 계산이 `evaluate.py`와 같은지 (임베딩 캐시가 있을 때) |
+| `tests/test_exp_text.py` | 실험용 조립 방식 (문장형 · 순서 바꾸기 · 분류명 빼기) |
 | `tests/test_config.py` | `config/matching.yaml` · 분류 이름이 서버와 같은지 (옆에 `../gdghost-server`가 있을 때) |
 
 점수 계산(`scorer.py`)과 글 조립(`text_builder.py`)은 서버 Java 코드를 그대로 옮긴 것입니다.
